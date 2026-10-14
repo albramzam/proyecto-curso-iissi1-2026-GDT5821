@@ -1,6 +1,6 @@
 # Título Proyecto
 
-## Miembros del grupo L3-ABS-5 (sustituir)
+## Miembros del grupo L3-ABS-5
 
 1. Talavera Enrique Cano, Jesús
 1. Ramos Zamora, Alberto
@@ -182,26 +182,81 @@ Como gerente de la empresa quiero saber todo sobre nuestro inventario: materiale
 
 #### 4.1.2. Reglas de negocio
 
-- **RN-01: Límite de carga de trabajo en banco**  
+ **RN-01: Límite de carga de trabajo en banco**  
   Como gerente de la empresa, quiero que se lleve un seguimiento del número de proyectos que se están llevando a cabo por cada especialista, ya que cada uno tiene un límite máximo de 3 encargos que pueden tener asignados en fabricación de forma simultánea, para que se tenga en cuenta la imposibilidad de asignar un especialista que tenga el cupo máximo alcanzado.
 
-- **RN-02: Calidad y Certificación del Material**  
+  *Pruebas de aceptación:*
+- Se registrará el número actual de pedidos en curso (fases de preparación,
+corte o soldadura) asignados a cada especialista.
+- Se establecerá un límite máximo de 3 encargos simultáneos por artesano.
+- Si el número de pedidos asignados alcanza el límite máximo establecido, el
+sistema bloqueará la asignación y emitirá una alerta al gerente indicando la
+sobrecarga y sugiriendo especialistas alternativos.
+
+ **RN-02: Calidad y Certificación del Material**  
   Como gerente de la empresa, quiero que, al comprar la materia prima, se asegure que la tubería de titanio sea de aleación Grado 9 o superior y que los composites de carbono cumplan con la norma ISO 4210 con un certificado técnico para poder proporcionar un producto seguro y duradero a nuestra clientela.
+  
+  *Pruebas de aceptación:*
+- Llevaremos una lista organizada de todos nuestros proveedores
+homologados, con sus datos de contacto y certificados de aleación al día.
+- Toda compra de tubería o composite debe estar vinculada obligatoriamente a
+un proveedor homologado.
+- El titanio recepcionado debe contar con la acreditación de "Titanio Grado 9" y
+los composites deben registrar el sello de ensayo conforme a la norma ISO
+4210.
 
-- **RN-03: Control de Calidad Integral**  
-  Como gerente de la empresa, quiero asegurarme de que, antes de entregar una bicicleta o cuadro, ésta haya pasado por una inspección final que verifique: alineación láser de punteras (<0.2 mm), apriete dinamométrico certificado y la ausencia total de defectos superficiales para mantener un control de la calidad de nuestros productos.
+ **RN-03: Control de Calidad Integral**  
+  Como gerente de la empresa, quiero asegurarme de que, antes de entregar una bicicleta o cuadro, ésta haya pasado por una inspección final que verifique: alineación láser de punteras (<0.2 mm), apriete dinamométrico certificado y la ausencia total de defectos superficiales.
 
-- **RN-04: Garantía Estructural "VeloForge"**  
+  *Pruebas de aceptación:*
+- Se hará un checklist de inspección final que incluya como mínimo:
+"Alineación láser de ejes (<0.2 mm)", "Pares de apriete verificados" y
+"Ausencia de defectos superficiales".
+- Toda pieza terminada debe registrar el resultado digital de esta inspección
+técnica previa.
+- Si el cuadro o montaje no supera uno o más puntos del checklist, se
+registrará su estado como "En Revisión de Banco".
+- Solo los proyectos que aprueben la totalidad del checklist podrán ser
+marcados como "Listo para Entrega".
+
+ **RN-04: Garantía Estructural "VeloForge"**  
   Como gerente de la empresa, me encargaré de que, si un usuario sufre daños estructurales en un cuadro, este tenga en rigor la garantía de 3 años que se ofrece contra defectos de fabricación o rotura de soldadura, para así proporcionar orden y respaldo dentro de la empresa.
 
-- **RN-05: Política de Devoluciones y Proyectos Personalizados**  
+  *Pruebas de aceptación:*
+- Toda factura o comprobante de compra debe indicar la cobertura de una
+garantía de 3 años contra defectos de fabricación o fallo de fatiga en
+soldadura.
+- El sistema deberá calcular y registrar la fecha de caducidad de la garantía (3
+años naturales desde la fecha de expedición).
+
+ **RN-05: Política de Devoluciones y Proyectos Personalizados**  
   Como gerente de la empresa, me encargaré de que, si se realiza alguna devolución de un producto estándar, esta esté dentro del plazo máximo de 14 días desde la entrega, excluyendo de dicha posibilidad a todos los cuadros o montajes catalogados como personalizados a medida.
 
-- **RN-06: Libro de Geometrías Registrado**  
-  Como gerente de la empresa, quiero que todo modelo de catálogo esté registrado en un "Libro de Geometrías" interno (físico y digital) con sus diagramas de cotas y especificaciones de tubería (a excepción de los proyectos biomecánicos a medida).
+  *Pruebas de aceptación:*
+- Al solicitar una devolución o cambio, el sistema debe validar que no hayan
+transcurrido más de 14 días desde la fecha de entrega.
+- Las bicicletas o cuadros catalogados como "Personalizados" serán excluidos
+automáticamente por el sistema de cualquier solicitud de desistimiento.
 
-- **RN-07: Experiencia de los nuevos especialistas**  
+ **RN-06: Libro de Geometrías Registrado**  
+  Como gerente de la empresa, quiero que todo modelo de catálogo esté registrado en un "Libro de Geometrías" interno (físico y digital) con sus diagramas de cotas y especificaciones de tubería (a excepción de los proyectos personalizados).
+
+  *Pruebas de aceptación:*
+- Se establecerá un repositorio digital (el "Libro de Geometrías") para
+almacenar los planos de cotas (stack, reach, ángulos).
+- El registro de geometrías debe permitir la consulta interna y pública para
+facilitar la configuración al ciclista.
+- Los pedidos que se registren como "Personalizados" no requerirán la
+asociación a una geometría preexistente del "Libro de Geometrías".
+
+ **RN-07: Experiencia de los nuevos especialistas**  
   Como gerente de la empresa, quiero que, al contratar un nuevo artesano o mecánico de taller, este deba tener al menos 3 años de experiencia acreditada en el sector.
+
+ *Pruebas de aceptación:*
+- Al tramitar el alta de un nuevo especialista, el sistema validará el campo de
+experiencia laboral si los años de experiencia introducidos son inferiores a 3, el sistema
+rechazará el registro y notificará que el candidato no cumple el umbral
+técnico fijado.
 
 
 ### 4.2. Mapa de historias de usuario (opcional)
