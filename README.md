@@ -161,7 +161,11 @@ Como dueño quiero conocer a varios especialistas y contratarlos en el caso de q
 
 **RI-04: Clientes y Especificaciones Biomecánicas**  
 Como gerente de la empresa quiero disponer de la información correspondiente a los clientes: nombre y apellidos, localidad, DNI, datos de contacto (número de teléfono, correo electrónico), club o federación a la que pertenece y preferencias ergonómicas (material preferido, presupuesto, especialista de preferencia, etc.) para tener control sobre los clientes.  
+*Pruebas de aceptación:*
+- Comprobar que el sistema almacena y muestra de forma estructurada los datos personales, de localización, DNI, vías de contacto y el club o federación deportiva de cada cliente.
+- Comprobar que los artesanos (framebuilders) y mecánicos (wheelbuilders) pueden consultar las especificaciones ergonómicas y medidas biomecánicas asociadas a la ficha del cliente para el cálculo de la geometría.
 
+**RI-05: Encargos y Seguimiento de Proyectos**  
 Como constructor o montador quiero contactar directamente con los clientes para que me den sus especificaciones biomecánicas y, si es necesario, aconsejarlos para poder buscar la geometría óptima acorde a lo que el ciclista solicite.  
 *Pruebas de aceptación:*
 - Comprobar que el sistema almacena y muestra los datos personales, de contacto y federativos de cada cliente.
@@ -183,26 +187,26 @@ Como gerente de la empresa quiero saber todo sobre nuestro inventario: materiale
 - Comprobar que cada material referencia a sus proveedores habituales (principal y secundario).
 - Se debe aplicar la regla de negocio RN-02 para comprobar que los materiales críticos (titanio Grado 9 y fibra ISO 4210) tienen asociado su certificado.
 
-**RI-07: Proveedores.**
-Como gerente de la empresa quiero saber todo en cuanto a nuestros proveedores: nombre de la empresa proveedora, teléfono de contacto, email de contacto, dirección, tipo de materiales o tubos que suministra, tiempo de entrega promedio, términos de pago, coste mínimo de pedido y el historial de pedidos para poder contactar con ellos cuando lo necesite y mantener un control con el objetivo de buscar lo más beneficioso para el taller.
+**RI-07: Proveedores.**  
+Como gerente de la empresa quiero saber todo en cuanto a nuestros proveedores: nombre de la empresa proveedora, teléfono de contacto, email de contacto, dirección, tipo de materiales o tubos que suministra, tiempo de entrega promedio, términos de pago, coste mínimo de pedido y el historial de pedidos para poder contactar con ellos cuando lo necesite y mantener un control con el objetivo de buscar lo más beneficioso para el taller.  
 *Pruebas de aceptación:*
 - Comprobar que el sistema almacena la información de los proveedores: nombre de la empresa, teléfono, email de contacto y dirección postal.
 - Comprobar que se registran los tipos de materiales o tubos que suministra, el tiempo de entrega promedio, los términos de pago, el coste mínimo de pedido y el historial de pedidos.
 
-**RI-08: Ventas y Transacciones.**
-Como dueño de la empresa quiero conocer toda la información sobre nuestras ventas y transacciones económicas para estar al tanto de nuestros ingresos y poder llevar un control financiero estricto de la empresa.
+**RI-08: Ventas y Transacciones.**  
+Como dueño de la empresa quiero conocer toda la información sobre nuestras ventas y transacciones económicas para estar al tanto de nuestros ingresos y poder llevar un control financiero estricto de la empresa.  
 *Pruebas de aceptación:*
 - Comprobar que el sistema registra de manera estructurada los datos relativos a las ventas y transacciones económicas de la empresa.
 - Comprobar que se almacenan los importes, fechas y conceptos asociados para permitir el control financiero estricto del negocio.
 
-**RI-09: Envíos y Logística.**
-Como gerente de la empresa quiero disponer de la información correspondiente a nuestros envíos: nº de envío, dirección del envío, método de envío (estándar asegurado o express), costes del porte, empresa encargada del transporte especializado, fecha estimada de entrega, estado del envío (preparando/en camino/entregado) y los datos del receptor para llevar un seguimiento constante para comprobar que no haya problemas y así poder informar a nuestros clientes.
+**RI-09: Envíos y Logística.**  
+Como gerente de la empresa quiero disponer de la información correspondiente a nuestros envíos: nº de envío, dirección del envío, método de envío (estándar asegurado o express), costes del porte, empresa encargada del transporte especializado, fecha estimada de entrega, estado del envío (preparando/en camino/entregado) y los datos del receptor para llevar un seguimiento constante para comprobar que no haya problemas y así poder informar a nuestros clientes.  
 *Pruebas de aceptación:*
 - Comprobar que se registra un número de envío asociado a su dirección de destino y a los datos del receptor.
 - Comprobar que el sistema almacena el método de envío (estándar asegurado o express), los costes del porte, la empresa de transporte especializada, la fecha estimada de entrega y el estado logístico actual (preparando / en camino / entregado).
 
-**RI-10: Balance económico por proyecto.**
-Como gerente de la empresa quiero disponer de la información sobre la relación coste-beneficio de cada encargo para llevar al día la rentabilidad real de cada bicicleta fabricada.
+**RI-10: Balance económico por proyecto.**  
+Como gerente de la empresa quiero disponer de la información sobre la relación coste-beneficio de cada encargo para llevar al día la rentabilidad real de cada bicicleta fabricada.  
 *Pruebas de aceptación:*
 - Comprobar que el sistema calcula y registra la relación de costes e ingresos derivados de cada encargo individual.
 - Comprobar que se almacena el margen de beneficio asociado a cada bicicleta fabricada para su consulta gerencial.
