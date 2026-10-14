@@ -202,8 +202,7 @@ homologados, con sus datos de contacto y certificados de aleación al día.
 - Toda compra de tubería o composite debe estar vinculada obligatoriamente a
 un proveedor homologado.
 - El titanio recepcionado debe contar con la acreditación de "Titanio Grado 9" y
-los composites deben registrar el sello de ensayo conforme a la norma ISO
-4210.
+los composites deben registrar el sello de ensayo conforme a la norma ISO 4210.
 
  **RN-03: Control de Calidad Integral**  
   Como gerente de la empresa, quiero asegurarme de que, antes de entregar una bicicleta o cuadro, ésta haya pasado por una inspección final que verifique: alineación láser de punteras (<0.2 mm), apriete dinamométrico certificado y la ausencia total de defectos superficiales.
