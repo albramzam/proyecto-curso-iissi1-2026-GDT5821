@@ -76,13 +76,13 @@ Como cliente quiero consultar el catálogo de bicicletas y el libro de geometrí
 - Se debe aplicar la regla de negocio RN-06 para asegurar que todo modelo de catálogo esté registrado en el "Libro de Geometrías" interno con sus diagramas de cotas y especificaciones de tubería.
 
 **R.F.02. Consulta de Perfiles de Especialistas**  
-Como gerente o dueño quiero filtrar y comparar las especialidades y años de experiencia de los artesanos y mecánicos para asignar al trabajador óptimo en función de las exigencias técnicas del encargo.  
+Como gerente o dueño quiero listar y comparar las especialidades y años de experiencia de los artesanos y mecánicos para asignar al trabajador óptimo en función de las exigencias técnicas del encargo.  
 *Pruebas de aceptación:*
 - Comprobar que el sistema lista correctamente a los artesanos y mecánicos del taller.
 - Comprobar que se pueden filtrar según experiencia o especialidad técnica.
 
 **R.F.03. Consulta de Ficha de Cliente**  
-Como personal autorizado (Dueño/Gerente) quiero gestionar y actualizar las preferencias y el historial de encargos de un cliente para mantener un seguimiento centralizado de su evolución técnica en el taller.  
+Como personal autorizado (Dueño/Gerente) quiero consultar y gestionar las preferencias y el historial de encargos de un cliente para mantener un seguimiento centralizado de su evolución técnica en el taller.  
 *Pruebas de aceptación:*
 - Comprobar que el sistema permite realizar búsquedas de clientes registrados por DNI o apellidos.
 - Comprobar que se pueden realizar consultas filtrando por preferencias del cliente, medidas corporales o club ciclista.
@@ -109,14 +109,14 @@ Como gerente o dueño quiero gestionar alertas automáticas de stock mínimo y s
 - Se debe aplicar la regla de negocio RN-02 para comprobar que las materias primas cumplen con los estándares de calidad y certificaciones requeridas.
 
 **R.F.07. Consulta de Proveedores**  
-Como gerente o dueño quiero gestionar la homologación y actualización de certificaciones de los proveedores para controlar qué empresas cumplen los requisitos de calidad necesarios para suministrar materias primas al taller.  
+Como gerente o dueño quiero consultar y gestionar la homologación de certificaciones de los proveedores para controlar qué empresas cumplen los requisitos de calidad necesarios para suministrar materias primas al taller.  
 *Pruebas de aceptación:*
 - Comprobar que el sistema muestra un listado completo de los proveedores dados de alta.
 - Comprobar que se muestra la información de contacto, las certificaciones homologadas y el historial de pedidos de cada proveedor.
 - Se debe aplicar la regla de negocio RN-02 para verificar la homologación de los proveedores de titanio y composites.
 
 **R.F.08. Consulta de Informes Económicos**  
-Como gerente o dueño quiero generar y visualizar informes sobre ventas, costes de materiales y la relación coste-beneficio de los proyectos para analizar los datos en un período determinado.  
+Como gerente o dueño quiero listar y visualizar informes sobre ventas, costes de materiales y la relación coste-beneficio de los proyectos para analizar los datos en un período determinado.  
 *Pruebas de aceptación:*
 - Comprobar que se calculan y visualizan correctamente las ventas, los costes de materiales y la relación coste-beneficio de los proyectos en dicho período.
 - Comprobar que el sistema permite seleccionar un intervalo de fechas para la generación de informes económicos.
