@@ -2,7 +2,7 @@
 
 ## Miembros del grupo L3-ABS-5
 
-1. Talavera Enrique Cano, Jesús
+1. Talavera Cano, Jesús Enrique
 1. Ramos Zamora, Alberto
 1. Domínguez Freire, Jose Luis
 1. Thomas Abello, Arve
