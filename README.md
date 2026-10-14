@@ -18,7 +18,6 @@ La gestión artesanal del taller requiere coordinar el abastecimiento de materia
 - **Alineación láser**: Procedimiento metrológico de precisión mediante el cual se comprueba en una mesa de control que las punteras y los ejes del cuadro son estrictamente coplanares (con una tolerancia inferior a 0.2 mm).
 - **Artesanía ciclista**: Fabricación manual e individualizada de cuadros y componentes, empleando técnicas tradicionales de soldadura, conformado de tubos y laminado de fibras.
 - **Bespoke (A medida)**: Capacidad de diseñar y construir una bicicleta adaptada de forma única a las dimensiones y a las preferencias de rendimiento del cliente.
-- **Carbono Toray T800**: Tejido de fibra de carbono de alto módulo de elasticidad que ofrece una elevada rigidez estructural y ligereza tras su curado térmico controlado.
 - **Cerámica (Rodamientos)**: Componentes mecánicos de baja fricción empleados en pedalieres y bujes para optimizar la eficiencia y suavidad de rodadura.
 - **Cuadro**: Estructura principal o chasis de la bicicleta sobre la que se ensamblan la horquilla, ruedas, grupo de transmisión y demás componentes.
 - **Diseño biomecánico**: Estudio ergonómico y cinemático del ciclista que determina las cotas exactas para maximizar la comodidad y la transferencia de potencia.
@@ -26,12 +25,9 @@ La gestión artesanal del taller requiere coordinar el abastecimiento de materia
 - **Geometría de catálogo**: Conjunto estandarizado de ángulos y longitudes predefinidas para fabricar cuadros bajo demanda sin requerir un estudio específico.
 - **Libro de Geometrías**: Registro técnico (físico y digital) donde se archivan los planos, esquemas dimensionales y especificaciones de materiales de los diseños propios del taller.
 - **Par de apriete**: Magnitud de fuerza de torsión aplicada mediante llaves para asegurar la tornillería sin dañar los componentes.
-- **Punteras mecanizadas CNC**: Piezas de anclaje de las ruedas al cuadro fabricadas mediante fresado por control numérico, garantizando alta rigidez y tolerancias mínimas.
-- **Racores**: Piezas de unión metálicas que abrazan los tubos del cuadro para unirlos mediante soldadura blanda o por capilaridad.
 - **Restauración estructural**: Servicio técnico destinado a reparar fisuras, alinear cuadros deformados y renovar acabados de bicicletas de alto valor.
 - **Soldadura TIG**: Técnica de unión manual por arco eléctrico, esencial para soldar titanio y aceros especiales sin introducir impurezas.
 - **Titanio Grado 9 (Ti-3Al-2.5V)**: Aleación de titanio con 3% de aluminio y 2.5% de vanadio, referente en el sector por su ligereza, resistencia a la corrosión y capacidad de absorción de impactos.
-- **Tubos conificados**: Tubería metálica cuyo grosor interno varía a lo largo del tubo para aligerar peso en el centro y mantener resistencia en las zonas de unión.
 - **Wheelbuilding**: Proceso artesanal de cálculo de longitud de radios, cruces, radiado y centrado milimétrico de ruedas de competición.
 
 ## 3. Visión general del sistema
