@@ -82,7 +82,7 @@ Como gerente o dueño quiero filtrar y comparar las especialidades y años de ex
 - Comprobar que se pueden filtrar según experiencia o especialidad técnica.
 
 **R.F.03. Consulta de Ficha de Cliente**  
-Como personal autorizado quiero gestionar y actualizar las preferencias y el historial de encargos de un cliente para mantener un seguimiento centralizado de su evolución técnica en el taller.  
+Como personal autorizado (Dueño/Gerente) quiero gestionar y actualizar las preferencias y el historial de encargos de un cliente para mantener un seguimiento centralizado de su evolución técnica en el taller.  
 *Pruebas de aceptación:*
 - Comprobar que el sistema permite realizar búsquedas de clientes registrados por DNI o apellidos.
 - Comprobar que se pueden realizar consultas filtrando por preferencias del cliente, medidas corporales o club ciclista.
