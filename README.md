@@ -127,6 +127,13 @@ Como cliente o personal autorizado quiero consultar el estado y la información 
 - Comprobar que el sistema permite consultar la información de seguimiento de un envío asociado a un pedido mediante su número de seguimiento o cliente.
 - Comprobar que se muestra el estado logístico actual (preparando, en camino, entregado) y los datos de transporte.
 
+**R.F.10. Consultar y contratar especialistas**  
+Como dueño, quiero poder consultar los perfiles de diferentes especialistas y contactar con ellos para contratar los servicios de aquellos que mejor se adapten a las necesidades de mi negocio.  
+*Pruebas de aceptación:*
+- Comprobar que el sistema permite consultar una lista de especialistas.
+- Comprobar que el sistema permite acceder al perfil de cada especialista.
+- Comprobar que el sistema muestra opciones para contactar con un especialista.
+- El dueño puede seleccionar a los especialistas que considere adecuados para su negocio.
 
 #### 4.1.1. Requisitos de información
 
