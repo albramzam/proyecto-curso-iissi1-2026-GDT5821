@@ -9,7 +9,7 @@
 
 ## 1. Introducción al problema
 
-- La empresa VeloForge nace de la pasión por el ciclismo de alto rendimiento y la ingeniería mecánica, con la ambición de convertirse en un taller de referencia en la fabricación artesanal de cuadros a medida (bespoke) y el ensamblaje de bicicletas de competición. Como taller en fase de expansión, su principal reto es competir con las grandes corporaciones industriales con producciones masivas de bajo coste y geometrías genéricas, demostrando el valor diferencial de la personalización, la durabilidad y la excelencia de la fabricación a mano.
+- La empresa VeloForge nace de la pasión por el ciclismo de alto rendimiento y la ingeniería mecánica, con la ambición de convertirse en un taller de referencia en la fabricación artesanal de cuadros a medida (bespoke) y el ensamblaje de bicicletas de competición. Como taller en fase de expansión, su principal reto es competir con las grandes corporaciones industriales con producciones masivas de bajo coste, demostrando el valor diferencial de la personalización, la durabilidad y la excelencia de la fabricación a mano.
 La gestión artesanal del taller requiere coordinar el abastecimiento de materiales, la asignación de carga de trabajo, y un riguroso control de tolerancias mecánicas. Por ello, es necesario desarrollar un software integral que aborde una doble necesidad estratégica: crecer de cara al público y optimizar la gestión técnica interna.
 
 
@@ -17,21 +17,21 @@ La gestión artesanal del taller requiere coordinar el abastecimiento de materia
 
 - **Alineación láser**: Procedimiento metrológico de precisión mediante el cual se comprueba en una mesa de control que las punteras y los ejes del cuadro son estrictamente coplanares (con una tolerancia inferior a 0.2 mm).
 - **Artesanía ciclista**: Fabricación manual e individualizada de cuadros y componentes, empleando técnicas tradicionales de soldadura, conformado de tubos y laminado de fibras.
-- **Bespoke (A medida)**: Capacidad de diseñar y construir una bicicleta adaptada de forma única a las dimensiones antropométricas y a las preferencias de rendimiento del cliente.
+- **Bespoke (A medida)**: Capacidad de diseñar y construir una bicicleta adaptada de forma única a las dimensiones y a las preferencias de rendimiento del cliente.
 - **Carbono Toray T800**: Tejido de fibra de carbono de alto módulo de elasticidad que ofrece una elevada rigidez estructural y ligereza tras su curado térmico controlado.
 - **Cerámica (Rodamientos)**: Componentes mecánicos de baja fricción empleados en pedalieres y bujes para optimizar la eficiencia y suavidad de rodadura.
 - **Cuadro**: Estructura principal o chasis de la bicicleta sobre la que se ensamblan la horquilla, ruedas, grupo de transmisión y demás componentes.
-- **Diseño biomecánico**: Estudio ergonómico y cinemático del ciclista que determina las cotas exactas (*stack*, *reach*, ángulos de tubo) para maximizar la comodidad y la transferencia de potencia.
+- **Diseño biomecánico**: Estudio ergonómico y cinemático del ciclista que determina las cotas exactas para maximizar la comodidad y la transferencia de potencia.
 - **Garantía estructural**: Cobertura técnica ofrecida por el taller frente a roturas, defectos de soldadura o fallos de fatiga en los materiales del cuadro.
-- **Geometría de catálogo**: Conjunto estandarizado de ángulos y longitudes predefinidas para fabricar cuadros bajo demanda sin requerir un estudio biomecánico específico.
+- **Geometría de catálogo**: Conjunto estandarizado de ángulos y longitudes predefinidas para fabricar cuadros bajo demanda sin requerir un estudio específico.
 - **Libro de Geometrías**: Registro técnico (físico y digital) donde se archivan los planos, esquemas dimensionales y especificaciones de materiales de los diseños propios del taller.
-- **Par de apriete**: Magnitud de fuerza de torsión (medida en Newton-metro, Nm) aplicada mediante llaves dinamométricas para asegurar la tornillería sin dañar los componentes.
+- **Par de apriete**: Magnitud de fuerza de torsión aplicada mediante llaves para asegurar la tornillería sin dañar los componentes.
 - **Punteras mecanizadas CNC**: Piezas de anclaje de las ruedas al cuadro fabricadas mediante fresado por control numérico, garantizando alta rigidez y tolerancias mínimas.
-- **Racores**: Piezas de unión metálicas que abrazan los tubos del cuadro para unirlos mediante soldadura blanda o por capilaridad (*brazing*).
+- **Racores**: Piezas de unión metálicas que abrazan los tubos del cuadro para unirlos mediante soldadura blanda o por capilaridad.
 - **Restauración estructural**: Servicio técnico destinado a reparar fisuras, alinear cuadros deformados y renovar acabados de bicicletas de alto valor.
-- **Soldadura TIG**: Técnica de unión manual por arco eléctrico bajo atmósfera inerte de gas argón, esencial para soldar titanio y aceros especiales sin introducir impurezas.
+- **Soldadura TIG**: Técnica de unión manual por arco eléctrico, esencial para soldar titanio y aceros especiales sin introducir impurezas.
 - **Titanio Grado 9 (Ti-3Al-2.5V)**: Aleación de titanio con 3% de aluminio y 2.5% de vanadio, referente en el sector por su ligereza, resistencia a la corrosión y capacidad de absorción de impactos.
-- **Tubos conificados (*butted*)**: Tubería metálica cuyo grosor interno varía a lo largo del tubo para aligerar peso en el centro y mantener resistencia en las zonas de unión.
+- **Tubos conificados**: Tubería metálica cuyo grosor interno varía a lo largo del tubo para aligerar peso en el centro y mantener resistencia en las zonas de unión.
 - **Wheelbuilding**: Proceso artesanal de cálculo de longitud de radios, cruces, radiado y centrado milimétrico de ruedas de competición.
 
 ## 3. Visión general del sistema
@@ -75,7 +75,7 @@ Es necesario tener un registro donde aparezcan todos los artesanos y técnicos d
 Como cliente quiero consultar el catálogo de bicicletas y el libro de geometrías, con la posibilidad de aplicar filtros por disciplina ciclista y técnica de unión para encontrar el modelo que mejor se adapte a mis necesidades e intereses.  
 *Pruebas de aceptación:*
 - Comprobar que el sistema muestra correctamente el catálogo completo de bicicletas y el libro de geometrías.
-- Comprobar que el usuario puede filtrar los modelos seleccionando una disciplina ciclista específica (Carretera, Gravel, MTB, Pista).
+- Comprobar que el usuario puede filtrar los modelos seleccionando una disciplina ciclista específica.
 - Comprobar que el usuario puede filtrar los modelos aplicando criterios de técnica de unión.
 - Se debe aplicar la regla de negocio RN-06 para asegurar que todo modelo de catálogo esté registrado en el "Libro de Geometrías" interno con sus diagramas de cotas y especificaciones de tubería.
 
@@ -86,7 +86,7 @@ Como gerente o dueño quiero filtrar y comparar las especialidades y años de ex
 - Comprobar que se pueden filtrar según experiencia o especialidad técnica.
 
 **R.F.03. Consulta de Ficha de Cliente**  
-Como personal autorizado quiero gestionar y actualizar las preferencias biomecánicas y el historial de encargos de un cliente para mantener un seguimiento centralizado de su evolución técnica en el taller.  
+Como personal autorizado quiero gestionar y actualizar las preferencias y el historial de encargos de un cliente para mantener un seguimiento centralizado de su evolución técnica en el taller.  
 *Pruebas de aceptación:*
 - Comprobar que el sistema permite realizar búsquedas de clientes registrados por DNI o apellidos.
 - Comprobar que se pueden realizar consultas filtrando por preferencias del cliente, medidas corporales o club ciclista.
