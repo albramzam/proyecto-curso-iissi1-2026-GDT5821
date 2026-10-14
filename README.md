@@ -50,7 +50,7 @@ Hay que tener un registro online de los modelos, cotas de geometría y especific
 Hay que tener un registro de todos los clientes (ciclistas particulares y clubes) donde aparezca su información personal sumado al historial de pedidos y parámetros biomecánicos.
 
 **Gestión de especialistas**:
-Es necesario tener un registro donde aparezcan todos los artesanos y técnicos de taller, donde podremos encontrar sus datos personales, vías de contacto y sus especialidades dentro del sector.
+Es necesario tener un registro donde aparezcan todos los artesanos y técnicos de taller, donde podremos encontrar sus datos personales, vías de contacto y sus especialidades dentro del sector, así como un canal de captación y evaluación de nuevos perfiles profesionales externos que permita al dueño analizar candidaturas y gestionar la contratación de nuevos especialistas para el taller.
 
 ### 3.2. Usuarios del sistema
 
