@@ -189,7 +189,7 @@ Como gerente de la empresa quiero saber todo sobre nuestro inventario: materiale
   Como gerente de la empresa, quiero que, al comprar la materia prima, se asegure que la tubería de titanio sea de aleación Grado 9 o superior y que los composites de carbono cumplan con la norma ISO 4210 con un certificado técnico para poder proporcionar un producto seguro y duradero a nuestra clientela.
 
 - **RN-03: Control de Calidad Integral**  
-  Como gerente de la empresa, quiero asegurarme de que, antes de entregar una bicicleta o cuadro, ésta haya pasado por una inspección final que verifique: alineación láser de punteras (<0.2 mm), apriete dinamométrico certificado y la ausencia total de defectos superficiales.
+  Como gerente de la empresa, quiero asegurarme de que, antes de entregar una bicicleta o cuadro, ésta haya pasado por una inspección final que verifique: alineación láser de punteras (<0.2 mm), apriete dinamométrico certificado y la ausencia total de defectos superficiales para mantener un control de la calidad de nuestros productos.
 
 - **RN-04: Garantía Estructural "VeloForge"**  
   Como gerente de la empresa, me encargaré de que, si un usuario sufre daños estructurales en un cuadro, este tenga en rigor la garantía de 3 años que se ofrece contra defectos de fabricación o rotura de soldadura, para así proporcionar orden y respaldo dentro de la empresa.
