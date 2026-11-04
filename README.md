@@ -261,7 +261,7 @@ La gestión artesanal del taller requiere coordinar el abastecimiento de materia
 
 ## Modelo conceptual
 
-![](img/modelo_conceptual.jpg)
+![](img/modelo_conceptual.png)
 
 *Pulsa sobre la imagen para verla a tamaño completo.*
 
