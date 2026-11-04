@@ -337,7 +337,7 @@ Pedido a Composites Guadalquivir (recepción 25/10/2025, coste total 241,00 €)
 
 El especialista asignado es Rafael Montero Gil (DNI 31208764L, email rmontero@gmail.com, contraseña RMGtig03_, teléfono 655908123), con especialidad "Soldadura TIG", biografía vacía y 3 años de experiencia (RN-07). Rafael tiene otros 2 encargos en Fabricación. Este encargo ya está Completado, así que no cuenta para el límite, y Rafael tiene 2 encargos activos (RN-01: máximo 3 en Diseño o Fabricación). Solo podría aceptar uno más.
 
-
+![](img/diagrama_objetos_escenario_principal.png)
 
 ## 6. Matrices de trazabilidad
 
