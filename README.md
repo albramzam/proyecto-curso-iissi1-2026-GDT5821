@@ -298,33 +298,33 @@ El especialista asignado es Rafael Montero Gil (DNI 31208764L, email rmontero@gm
 
 Para acortar: E(Entidad), Asociaciones(A) y Restricciones(R)
 
-| Requisito / Regla | E: Modelo | E: LibroGeometria | E: Cliente | E: Especialista | E: Encargo | E: ChecklistCalidad | E: Material | E: Proveedor | E: Envio | E: PedidoMaterial | A: Modelo - LibroGeometria | A: Encargo - Especialista | A: Encargo - Cliente | A: Encargo - Modelo | A: Encargo - Checklist | A: Encargo - Envio | A: Encargo - Material (Consumo) | A: Pedido - Proveedor | A: Pedido - Material (Linea) | A: Especialista - Gerente |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **RF-01** (Consulta Catálogo) | X | X | | | | | | | | | X | | | | | | | | | |
-| **RF-02** (Consulta/Gestión Especialistas) | | | | X | | | | | | | | | | | | | | | | X |
-| **RF-03** (Ficha de Cliente) | | | X | | X | | | | | | | | X | | | | | | | |
-| **RF-04** (Listado General Encargos) | | | X | X | X | | | | | | | X | X | | | | | | | |
-| **RF-05** (Consulta Encargos Cliente) | | | X | | X | | | | | | | | X | | | | | | | |
-| **RF-06** (Inventario Materiales) | | | | | | | X | | | | | | | | | | | | | |
-| **RF-07** (Consulta Proveedores) | | | | | | | | X | | X | | | | | | | | X | X | |
-| **RF-08** (Informes Económicos) | | | | | X | | X | | | | | | | | | | X | | | |
-| **RF-09** (Seguimiento Envíos) | | | | | X | | | | X | | | | | | | X | | | | |
-| **RI-01** (Modelos y Bicicletas) | X | X | | | | | | | | | X | | | | | | | | | |
-| **RI-02** (Especialistas y Alta) | | | | X | | | | | | | | | | | | | | | | X |
-| **RI-03** (Clientes y Biomecánica) | | | X | | | | | | | | | | | | | | | | | |
-| **RI-04** (Órdenes de Fabricación) | | | X | X | X | X | | | | | | X | X | X | X | | | | | |
-| **RI-05** (Inventario y Consumo) | | | | | | | X | | | X | | | | | | | X | | X | |
-| **RI-06** (Proveedores Homologados) | | | | | | | | X | | X | | | | | | | | X | X | |
-| **RI-07** (Facturación y Garantías) | | | | | X | | | | | | | | | | | | | | | |
-| **RI-08** (Envíos y Logística) | | | | | X | | | | X | | | | | | | X | | | | |
-| **RI-09** (Rentabilidad / Balance) | | | | | X | | X | | | | | | | | | | X | | | |
-| **RN-01** (Límite Carga Trabajo) | | | | X | X | | | | | | | X | | | | | | | | |
-| **RN-02** (Calidad/Certificación) | | | | | | | X | X | | X | | | | | | | | X | X | |
-| **RN-03** (Control Calidad) | | | | | X | X | | | | | | | | | X | | | | | |
-| **RN-04** (Garantía Estructural) | | | | | X | | | | X | | | | | | | X | | | | |
-| **RN-05** (Política Devoluciones) | X | | | | X | | | | | | | | | X | | | | | | |
-| **RN-06** (Libro Geometrías) | X | X | | | X | | | | | | X | | | X | | | | | | |
-| **RN-07** (Experiencia Especialistas) | | | | X | | | | | | | | | | | | | | | | X |
+| Requisito / Regla | E: Modelo | E: LibroGeometria | E: Cliente | E: Especialista | E: Encargo | E: ChecklistCalidad | E: Material | E: Proveedor | E: Envio | E: PedidoMaterial | E: Direccion | E: UbicacionAlmacen | E: Gerente | A: Modelo - LibroGeometria | A: Encargo - Especialista | A: Encargo - Cliente | A: Encargo - Modelo | A: Encargo - Checklist | A: Encargo - Envio | A: Encargo - Material (Consumo) | A: Pedido - Proveedor | A: Pedido - Material (Linea) | A: Especialista - Gerente | A: Material - Ubicacion | A: Envio - Direccion | A: Gerente - Pedido |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **RF-01** (Consulta Catálogo) | X | X | | | | | | | | | | | | X | | | | | | | | | | | | |
+| **RF-02** (Consulta/Gestión Especialistas) | | | | X | | | | | | | | | X | | | | | | | | | | X | | | |
+| **RF-03** (Ficha de Cliente) | | | X | | X | | | | | | X | | | | | X | | | | | | | | | | |
+| **RF-04** (Listado General Encargos) | | | X | X | X | | | | | | | | | | X | X | | | | | | | | | | |
+| **RF-05** (Consulta Encargos Cliente) | | | X | | X | | | | | | | | | | | X | | | | | | | | | | |
+| **RF-06** (Inventario Materiales) | | | | | | | X | | | | | X | | | | | | | | | | | | X | | |
+| **RF-07** (Consulta Proveedores) | | | | | | | | X | | X | X | | | | | | | | | | X | X | | | | |
+| **RF-08** (Informes Económicos) | | | | | X | | X | | | X | | | | | | | | | | X | | X | | | | |
+| **RF-09** (Seguimiento Envíos) | | | | | X | | | | X | | X | | | | | | | | X | | | | | | X | |
+| **RI-01** (Modelos y Bicicletas) | X | X | | | | | | | | | | | | X | | | | | | | | | | | | |
+| **RI-02** (Especialistas y Alta) | | | | X | | | | | | | | | X | | | | | | | | | | X | | | |
+| **RI-03** (Clientes y Biomecánica) | | | X | | X | | | | | | X | | | | | X | | | | | | | | | | |
+| **RI-04** (Órdenes de Fabricación) | | | X | X | X | X | | | | | | | | | X | X | X | X | | X | | | | | | |
+| **RI-05** (Inventario y Consumo) | | | | | | | X | | | X | | X | | | | | | | | X | | X | | X | | |
+| **RI-06** (Proveedores Homologados) | | | | | | | | X | | X | | | | | | | | | | | X | X | | | | |
+| **RI-07** (Facturación y Garantías) | | | | | X | | | | | | | | | | | | | | | | | | | | | |
+| **RI-08** (Envíos y Logística) | | | | | X | | | | X | | X | | | | | | | | X | | | | | | X | |
+| **RI-09** (Rentabilidad / Balance) | | | | | X | | X | | | X | | | | | | | | | | X | | X | | | | |
+| **RN-01** (Límite Carga Trabajo) | | | | X | X | | | | | | | | | | X | | | | | | | | | | | |
+| **RN-02** (Calidad/Certificación) | | | | | | | X | X | | X | | | | | | | | | | | X | X | | | | |
+| **RN-03** (Control Calidad) | | | | | X | X | | | | | | | | | | | | X | | | | | | | | |
+| **RN-04** (Garantía Estructural) | | | | | X | | | | X | | | | | | | | | | X | | | | | | | |
+| **RN-05** (Política Devoluciones) | X | | | | X | | | | | | | | | | | | X | | | | | | | | | |
+| **RN-06** (Libro Geometrías) | X | X | | | X | | | | | | | | | X | | | X | | | | | | | | | |
+| **RN-07** (Experiencia Especialistas) | | | | X | | | | | | | | | X | | | | | | | | | | X | | | |
 
 ## 7. Modelo relacional en 3FN
 
