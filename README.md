@@ -259,7 +259,13 @@ La gestión artesanal del taller requiere coordinar el abastecimiento de materia
 
 ### 5.1. Diagramas de clases UML
 
-- con restricciones.
+## Modelo conceptual
+
+![](img/modelo_conceptual.jpg)
+
+*Pulsa sobre la imagen para verla a tamaño completo.*
+
+Las reglas de negocio (RN-01 a RN-07) están explicadas en [docs/restricciones_negocio.md](docs/restricciones_negocio.md).
 
 ### 5.2. Escenarios de prueba
 
