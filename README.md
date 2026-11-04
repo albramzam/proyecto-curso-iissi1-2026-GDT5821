@@ -341,7 +341,7 @@ El especialista asignado es Rafael Montero Gil (DNI 31208764L, email rmontero@gm
 
 ## 6. Matrices de trazabilidad
 
-Para acortar: E(Entidad),Asociaciones(A) y Restricciones(R)
+Para acortar: E(Entidad), Asociaciones(A) y Restricciones(R)
 
 | Requisito | E: Modelo | E: L. Geom. | E: Cliente | E: Especialista | E: Encargo | E: Checklist | E: Material | E: Proveedor | E: Envío | E: Pedido | A: Mod-L.Geom | A: Cli-Enc | A: Esp-Enc | A: Enc-Chk | A: Prov-Ped | A: Enc-Env | R: {RN-01} Max Enc. | R: {RN-03} Check. | R: {RN-04} Garantía | R: {RN-05} Devoluc. | R: {RN-07} Experiencia |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
