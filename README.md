@@ -319,19 +319,24 @@ técnico fijado.
 
 ## 6. Matrices de trazabilidad
 
-- Matriz de trazabilidad entre los elementos del modelo conceptual y los requisitos.
-
-|       | EntidadX   | AsociaciónX  | RestricciónX  | Entidad2 ...   | 
-|:------|:-----------|:-----------|:-----------|:-----------|
-| RI-1  | X          | X          | X          | X          |
-| RI-2  |            | X          |            | X          |
-| RF-1  |            | X          |            | X          |
-| RF-2  | X          |            | X          | X          |
-| RN-1  |            | X          |            |            |
-| RN-2  | X          | X          | X          |            |
-| ...   |            |            |            |            |
-
--- fin entregable 2 --
+| Requisito | E: Modelo | E: L. Geom. | E: Cliente | E: Especialista | E: Encargo | E: Checklist | E: Material | E: Proveedor | E: Envío | E: Pedido | A: Mod-L.Geom | A: Cli-Enc | A: Esp-Enc | A: Enc-Chk | A: Prov-Ped | A: Enc-Env | R: {RN-01} Max Enc. | R: {RN-03} Check. | R: {RN-04} Garantía | R: {RN-05} Devoluc. | R: {RN-07} Experiencia |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **RF.01** | X | X | | | | | | | | | X | | | | | | | | | | |
+| **RF.02** | | | | X | | | | | | | | | | | | | | | | | |
+| **RF.03** | | | X | | X | | | | | | | X | | | | | | | | | |
+| **RF.04** | | | X | X | X | | | | | | | X | X | | | | X | | | | |
+| **RF.05** | | | X | | X | | | | | | | X | | | | | | | | | |
+| **RF.06** | | | | | | X | | | | | | | | | | | | | | | |
+| **RF.07** | | | | | | | | X | | X | | | | | X | | | | | | |
+| **RF.08** | | | | | X | | X | | | | | | | | | | | | | | |
+| **RF.09** | | | | | X | | | | X | | | | | | | X | | | | | |
+| **RF.10** | | | | X | | | | | | | | | | | | | | | | | X |
+| **RI-01** | X | X | | | | | | | | | X | | | | | | | | | | |
+| **RI-02** | | | | X | | | | | | | | | | | | | | | | | |
+| **RI-06** | | | X | X | X | | | | | | | X | X | | | | X | X | | | |
+| **RN-01** | | | | X | X | | | | | | | | X | | | | X | | | | |
+| **RN-03** | | | | | X | X | | | | | | | | X | | | | X | | | |
+| **RN-06** | X | X | | | | | | | | | X | | | | | | | | | | |
 
 ## 7. Modelo relacional en 3FN
 
