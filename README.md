@@ -5,7 +5,6 @@
 1. Talavera Cano, Jesús Enrique
 1. Ramos Zamora, Alberto
 1. Domínguez Freire, Jose Luis
-1. Thomas Abello, Arve
 
 ## 1. Introducción al problema
 
@@ -318,6 +317,8 @@ técnico fijado.
 - con descripción textual y diagrama de objetos UML.
 
 ## 6. Matrices de trazabilidad
+
+Para acortar: E(Entidad),Asociaciones(A) y Restricciones(R)
 
 | Requisito | E: Modelo | E: L. Geom. | E: Cliente | E: Especialista | E: Encargo | E: Checklist | E: Material | E: Proveedor | E: Envío | E: Pedido | A: Mod-L.Geom | A: Cli-Enc | A: Esp-Enc | A: Enc-Chk | A: Prov-Ped | A: Enc-Env | R: {RN-01} Max Enc. | R: {RN-03} Check. | R: {RN-04} Garantía | R: {RN-05} Devoluc. | R: {RN-07} Experiencia |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
