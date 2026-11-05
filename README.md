@@ -269,6 +269,8 @@ Las reglas de negocio (RN-01 a RN-07) están explicadas en [docs/restricciones_n
 
 ### 5.2. Escenarios de prueba
 
+CASO DE PRUEBA POSITIVO
+
 **Descripción textual**
 
 Dado el cliente Marcos Villalba Ortiz (DNI 28745931K, email mvillalba88@gmail.com, contraseña VLOcl92__ y teléfono 645112389), perteneciente al "Club Ciclista Híspalis" y con preferencia de material titanio, residente en Calle Betis 12, Sevilla (41010, provincia de Sevilla). Realiza un encargo personalizado basado en el modelo "VeloForge Híspalis Gravel Ti": disciplina gravel, técnica de unión soldadura TIG, descripción "Cuadro gravel de titanio Grado 9", precio base 2.900 €, stock disponible 0 y tiempo de fabricación de 60 días. Dicho modelo se rige por una entrada del Libro de Geometrías (plantilla GRV-TI-56, stack 570 mm, reach 390 mm, ángulo de dirección 70,5°, ángulo del tubo de sillín 73° y vainas de 425 mm) (RN-06).
@@ -291,6 +293,18 @@ Pedido a TitanTubes Ibérica (recepción 22/10/2025, coste total 577,30 €). Ti
 Pedido a Composites Guadalquivir (recepción 25/10/2025, coste total 241,00 €). Tiene una línea de pedido: 2 unidades de fibra de carbono a 120,50 €. El proveedor es homologado (CIF B41765432, teléfono 954300400, email info@compositesguadalquivir.es, plazo de entrega medio 10 días, coste mínimo de pedido 200 €) y radica en Avenida de la Ciencia 8, Sevilla (41092).
 
 El especialista asignado es Rafael Montero Gil (DNI 31208764L, email rmontero@gmail.com, contraseña RMGtig03_, teléfono 655908123), con especialidad "Soldadura TIG", biografía vacía y 3 años de experiencia (RN-07). Rafael tiene otros 2 encargos en Fabricación. Este encargo ya está Completado, así que no cuenta para el límite, y Rafael tiene 2 encargos activos (RN-01: máximo 3 en Diseño o Fabricación). Solo podría aceptar uno más.
+
+CASO DE PRUEBA NEGATIVO
+
+**Descripción textual**
+
+Dado el cliente Ignacio Peña Rivas (con DNI 48901234T, email ipena_triatlon@gmail.com, contraseña IpeTr!994# y teléfono 634789120), perteneciente al "Club Triatlón Al-Ándalus" y con preferencia de material fibra de carbono, residente en Avenida de la Borbolla 45, Sevilla (41013, provincia de Sevilla). El cliente intenta formalizar un encargo no personalizado (esPersonalizado = false) basado en el modelo "VeloForge Aero TT Carbon": disciplina contrarreloj, técnica de unión monocasco, descripción "Cuadro aerodinámico de triatlón", precio base 3.450 €, stock disponible 0 y tiempo de fabricación de 45 días. Sin embargo, dicho modelo no tiene asociada ninguna entrada del Libro de Geometrías al encontrarse en revisión técnica, por lo que el sistema bloquea inmediatamente la creación del encargo al vulnerarse la regla que exige que todo modelo de catálogo debe estar vinculado a una plantilla geométrica homologada (RN-06).
+
+Para tramitar de forma forzada la orden de trabajo en el sistema, el gerente Andrés Luque (DNI 23498135J, email andresluque@gmail.com, contraseña AnfaUp_158 y teléfono 671245135) intenta asignar el encargo al especialista Rafael Montero Gil (DNI 31208764L, email rmontero@gmail.com, contraseña RMGtig03_ y teléfono 655908123). No obstante, en ese momento Rafael ya cuenta con tres encargos activos simultáneos en taller en estado de Fabricación y Diseño (RN-01). El sistema detecta que el especialista ha alcanzado su cupo máximo de 3 encargos en curso y deniega la asignación, emitiendo una alerta de sobrecarga en banco de trabajo (RN-01).
+
+Aun así, al intentar preparar los materiales para la fabricación del chasis, se pretende registrar un consumo (ConsumoMaterial) retirando del almacén 2 unidades de manta de carbono no estructural (coste por unidad 45,00 €, stock actual 3 y stock mínimo 2, ubicada en pasillo C, estantería 3, gaveta 1). Dicho composite carece de certificado técnico oficial (certificado = null) y procede de un proveedor secundario no homologado (esHomologado = false). Al intentar imputar el consumo al encargo, el sistema rechaza la operación debido a que no está permitido consumir materias primas críticas que no cuenten con su certificado de conformidad técnica ISO 4210 asociado ({RN-02b} Certificado conforme).
+
+Finalmente, al intentar validar una pieza defectuosa de prueba con fecha 10/11/2025, el checklist de calidad registra una alineación láser de 0,38 mm (superando la tolerancia máxima de 0,2 mm), pares de apriete validados pero presencia de fisuras y rebabas visibles (sinDefectosSuperficiales = false). Al no superar dos de los tres criterios obligatorios de inspección, el sistema no permite marcar controlCalidadSuperado como verdadero ni autoriza la transición del encargo a estado Completado (RN-03). Por tanto, el encargo conmuta forzosamente al estado "En Revisión de Banco", impidiendo la emisión del comprobante con la garantía estructural de 3 años (RN-04) y bloqueando la generación del envío logístico hacia la dirección del cliente.
 
 ![](img/diagrama_objetos_escenario_principal.png)
 
