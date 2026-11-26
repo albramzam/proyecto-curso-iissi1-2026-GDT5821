@@ -294,6 +294,9 @@ Pedido a Composites Guadalquivir (recepción 25/10/2025, coste total 241,00 €)
 
 El especialista asignado es Rafael Montero Gil (DNI 31208764L, email rmontero@gmail.com, contraseña RMGtig03_, teléfono 655908123), con especialidad "Soldadura TIG", biografía vacía y 3 años de experiencia (RN-07). Rafael tiene otros 2 encargos en Fabricación. Este encargo ya está Completado, así que no cuenta para el límite, y Rafael tiene 2 encargos activos (RN-01: máximo 3 en Diseño o Fabricación). Solo podría aceptar uno más.
 
+
+![](img/escenario_de_prueba_positivo.png) 
+
 CASO DE PRUEBA NEGATIVO
 
 **Descripción textual**
@@ -306,7 +309,6 @@ Aun así, al intentar preparar los materiales para la fabricación del chasis, s
 
 Finalmente, al intentar validar una pieza defectuosa de prueba con fecha 10/11/2025, el checklist de calidad registra una alineación láser de 0,38 mm (superando la tolerancia máxima de 0,2 mm), pares de apriete validados pero presencia de fisuras y rebabas visibles (sinDefectosSuperficiales = false). Al no superar dos de los tres criterios obligatorios de inspección, el sistema no permite marcar controlCalidadSuperado como verdadero ni autoriza la transición del encargo a estado Completado (RN-03). Por tanto, el encargo conmuta forzosamente al estado "En Revisión de Banco", impidiendo la emisión del comprobante con la garantía estructural de 3 años (RN-04) y bloqueando la generación del envío logístico hacia la dirección del cliente.
 
-![](img/escenario_de_prueba_positivo.png) 
 
 ## 6. Matrices de trazabilidad
 
