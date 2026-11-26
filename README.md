@@ -273,27 +273,7 @@ CASO DE PRUEBA POSITIVO
 
 **Descripción textual**
 
-Dado el cliente Marcos Villalba Ortiz (DNI 28745931K, email mvillalba88@gmail.com, contraseña VLOcl92__ y teléfono 645112389), perteneciente al "Club Ciclista Híspalis" y con preferencia de material titanio, residente en Calle Betis 12, Sevilla (41010, provincia de Sevilla). Realiza un encargo personalizado basado en el modelo "VeloForge Híspalis Gravel Ti": disciplina gravel, técnica de unión soldadura TIG, descripción "Cuadro gravel de titanio Grado 9", precio base 2.900 €, stock disponible 0 y tiempo de fabricación de 60 días. Dicho modelo se rige por una entrada del Libro de Geometrías (plantilla GRV-TI-56, stack 570 mm, reach 390 mm, ángulo de dirección 70,5°, ángulo del tubo de sillín 73° y vainas de 425 mm) (RN-06).
-
-El encargo se realizó el 12/10/2025, con fecha de entrega estimada el 17/12/2025 y presupuesto acordado de 3.250 €. Al ser personalizado (esPersonalizado = true), se han ajustado las cotas a las medidas del cliente (cotasAjustadas: "Reach 392 mm, stack 576 mm, vainas 425 mm").
-
-El encargo está en estado Completado y controlCalidadSuperado = true (RN-03). Su checklist de calidad, con fecha de inspección 05/12/2025, registra una alineación láser de 0,15 mm (< 0,2 mm), pares de apriete validados y ausencia de defectos superficiales. La fecha de caducidad de la garantía es el 12/10/2028, es decir, la fecha del encargo más 3 años (RN-04).
-
-Al completarse, el encargo ha generado un envío con método "Estándar asegurado", empresa de transporte "Cycle Logistics", coste de envío 28,50 €, número de seguimiento "VF-784512-ES", estado PREPARANDO y fecha estimada de entrega el 19/12/2025. El envío se entrega en la dirección del cliente (Calle Betis 12).
-
-Para fabricar el cuadro se ha consumido material (ConsumoMaterial) que ha habido que reponer, porque el stock era insuficiente:
-
-Tubería de titanio (especificación "Titanio Grado 9 (Ti-3Al-2.5V)", certificado "Titanio Grado 9"): coste por unidad 85,40 €, stock actual 1 y stock mínimo 4. Ubicación: pasillo B, estantería 2, gaveta 3. Unidades consumidas: 6.
-Fibra de carbono para horquilla (especificación "Composite de carbono", certificado "ISO 4210"): coste por unidad 120,50 €, stock actual 0 y stock mínimo 2. Ubicación: pasillo C, estantería 1, gaveta 5. Unidades consumidas: 2.
-Rodamientos cerámicos para pedalier (especificación "Rodamiento cerámico baja fricción", sin certificado): coste por unidad 64,90 €, stock actual 0 y stock mínimo 2. Ubicación: pasillo A, estantería 4, gaveta 1. Unidades consumidas: 1.
-
-Se han realizado dos pedidos de material, ambos con fecha 15/10/2025 y gestionados por el gerente Andrés Luque (DNI 23498135J, email andresluque@gmail.com, contraseña AnfaUp_158, teléfono 671245135):
-
-Pedido a TitanTubes Ibérica (recepción 22/10/2025, coste total 577,30 €). Tiene dos líneas de pedido: 6 unidades de tubería de titanio a 85,40 € y 1 unidad de rodamientos cerámicos a 64,90 €. El proveedor es homologado (CIF B41234567, teléfono 954100200, email pedidos@titantubes.es, plazo de entrega medio 7 días, coste mínimo de pedido 150 €) y radica en Calle Industria 22, Sevilla (41007).
-Pedido a Composites Guadalquivir (recepción 25/10/2025, coste total 241,00 €). Tiene una línea de pedido: 2 unidades de fibra de carbono a 120,50 €. El proveedor es homologado (CIF B41765432, teléfono 954300400, email info@compositesguadalquivir.es, plazo de entrega medio 10 días, coste mínimo de pedido 200 €) y radica en Avenida de la Ciencia 8, Sevilla (41092).
-
-El especialista asignado es Rafael Montero Gil (DNI 31208764L, email rmontero@gmail.com, contraseña RMGtig03_, teléfono 655908123), con especialidad "Soldadura TIG", biografía vacía y 3 años de experiencia (RN-07). Rafael tiene otros 2 encargos en Fabricación. Este encargo ya está Completado, así que no cuenta para el límite, y Rafael tiene 2 encargos activos (RN-01: máximo 3 en Diseño o Fabricación). Solo podría aceptar uno más.
-
+El cliente Marcos Villalba Ortiz, del Club Ciclista Híspalis, realiza un encargo personalizado de un cuadro gravel de titanio por 3.250 €, basado en el modelo "VeloForge Híspalis Gravel Ti", que consta en el Libro de Geometrías (RN-06). Lo construye el especialista Rafael Montero Gil (soldadura TIG, 3 años de experiencia, RN-07), que tiene otros 2 encargos activos (RN-01). El cuadro supera el checklist de calidad (alineación láser de 0,15 mm), por lo que el encargo queda Completado (RN-03), con garantía hasta el 12/10/2028 (RN-04), y genera un envío "VF-784512-ES" en estado PREPARANDO. El titanio consumido (stock 1, mínimo 4) se repone con un pedido a TitanTubes Ibérica, proveedor homologado (RN-02).
 
 ![](img/escenario_de_prueba_positivo.png) 
 
@@ -301,13 +281,7 @@ CASO DE PRUEBA NEGATIVO
 
 **Descripción textual**
 
-Dado el cliente Ignacio Peña Rivas (con DNI 48901234T, email ipena_triatlon@gmail.com, contraseña IpeTr!994# y teléfono 634789120), perteneciente al "Club Triatlón Al-Ándalus" y con preferencia de material fibra de carbono, residente en Avenida de la Borbolla 45, Sevilla (41013, provincia de Sevilla). El cliente intenta formalizar un encargo no personalizado (esPersonalizado = false) basado en el modelo "VeloForge Aero TT Carbon": disciplina contrarreloj, técnica de unión monocasco, descripción "Cuadro aerodinámico de triatlón", precio base 3.450 €, stock disponible 0 y tiempo de fabricación de 45 días. Sin embargo, dicho modelo no tiene asociada ninguna entrada del Libro de Geometrías al encontrarse en revisión técnica, por lo que el sistema bloquea inmediatamente la creación del encargo al vulnerarse la regla que exige que todo modelo de catálogo debe estar vinculado a una plantilla geométrica homologada (RN-06).
-
-Para tramitar de forma forzada la orden de trabajo en el sistema, el gerente Andrés Luque (DNI 23498135J, email andresluque@gmail.com, contraseña AnfaUp_158 y teléfono 671245135) intenta asignar el encargo al especialista Rafael Montero Gil (DNI 31208764L, email rmontero@gmail.com, contraseña RMGtig03_ y teléfono 655908123). No obstante, en ese momento Rafael ya cuenta con tres encargos activos simultáneos en taller en estado de Fabricación y Diseño (RN-01). El sistema detecta que el especialista ha alcanzado su cupo máximo de 3 encargos en curso y deniega la asignación, emitiendo una alerta de sobrecarga en banco de trabajo (RN-01).
-
-Aun así, al intentar preparar los materiales para la fabricación del chasis, se pretende registrar un consumo (ConsumoMaterial) retirando del almacén 2 unidades de manta de carbono no estructural (coste por unidad 45,00 €, stock actual 3 y stock mínimo 2, ubicada en pasillo C, estantería 3, gaveta 1). Dicho composite carece de certificado técnico oficial (certificado = null) y procede de un proveedor secundario no homologado (esHomologado = false). Al intentar imputar el consumo al encargo, el sistema rechaza la operación debido a que no está permitido consumir materias primas críticas que no cuenten con su certificado de conformidad técnica ISO 4210 asociado ({RN-02b} Certificado conforme).
-
-Finalmente, al intentar validar una pieza defectuosa de prueba con fecha 10/11/2025, el checklist de calidad registra una alineación láser de 0,38 mm (superando la tolerancia máxima de 0,2 mm), pares de apriete validados pero presencia de fisuras y rebabas visibles (sinDefectosSuperficiales = false). Al no superar dos de los tres criterios obligatorios de inspección, el sistema no permite marcar controlCalidadSuperado como verdadero ni autoriza la transición del encargo a estado Completado (RN-03). Por tanto, el encargo conmuta forzosamente al estado "En Revisión de Banco", impidiendo la emisión del comprobante con la garantía estructural de 3 años (RN-04) y bloqueando la generación del envío logístico hacia la dirección del cliente.
+La cliente Lucía Navarro Prieto, del Club Ciclista Triana, tiene un encargo personalizado de un cuadro gravel de titanio por 2.980 €, basado en el modelo "VeloForge Híspalis Gravel Ti" y asignado a Rafael Montero Gil. En la inspección final del 10/12/2025, la alineación láser mide 0,35 mm, por encima del límite de 0,2 mm. El checklist no se supera, el control de calidad queda sin superar y el encargo permanece en Montaje.
 
 
 ![](img/escenario_de_prueba_negativo.png) 
